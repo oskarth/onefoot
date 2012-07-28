@@ -15,7 +15,7 @@ for file in * ; do
 
     # Markdown meta info -> html partials
     pandoc --template=_post.html $file \
-      -V link:$name.html\
+      -V link:$name.html \
       -V readtime:`expr $(wc -w < $file) / 250 + 1` \
       -o `echo /tmp/$datename`.htmlpartial
 esac
