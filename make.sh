@@ -1,11 +1,9 @@
 #!/bin/bash
 # make.sh: simple wrapper script for pandoc to turn text into a static site.
 
-regex_name='s/\(.*\)\..*/\1/' # remove file extension
-
 # Compiles markdown into html and html partials
 for file in * ; do
-  name=`echo $file | sed $regex_name`
+  name=`echo $file | sed 's/\(.*\)\..*/\1/'` # remove file extension
   datename=`echo $(head -3 $file | tail -1 | grep "%" | tr -d "% ")`$name
 
   case $file in *.md|*.txt)
