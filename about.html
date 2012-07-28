@@ -1,0 +1,46 @@
+<!DOCTYPE html>                                                                 
+<html>
+  <head>
+    <meta charset="UTF-8">                                                        
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1> <a href="index.html">Hi there, Stranger!</a></h1>
+    </div>
+
+    <div id="nav">
+      <a href="about.html">about</a>
+    </div>
+
+    <div id="content">
+      
+      
+      <h1 id="about-onefoot">About onefoot</h1>
+      <p>Onefoot is just a wrapper around <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>, the universal text converter, which allows you to create a simple static pages with:</p>
+      <ul>
+      <li>a html wrapper for writing headers, footers, css, javascript.</li>
+      <li>html partials for creating elements which gets concatenated together.</li>
+      <li>custom key:value pairs to use arbitrary information in your posts.</li>
+      </ul>
+      <p>Notice that there is no &quot;%title%&quot; element at the top - so it gets excluded from the index page.</p>
+      <h2 id="how-do-i-do-stuff">How do I do stuff?</h2>
+      <ol style="list-style-type: decimal">
+      <li>Write text in markdown.</li>
+      <li>Edit _wrapper and _post templates to your liking.</li>
+      <li>Run &quot;./make.sh;open index.html&quot; to see results.</li>
+      </ol>
+      <p>If you want to do something interesting, have a look at make.sh.</p>
+      <h2 id="resources">Resources</h2>
+      <p>Templating language: <a href="http://johnmacfarlane.net/pandoc/README.html#templates">Pandoc Templates</a></p>
+      <p>Markdown editting: <a href="http://daringfireball.net/projects/markdown/basics">Daring Fireball</a></p>
+
+    </div>                                               
+
+    <div id="footer">
+      <h1> ...bye </h1>
+    </div>
+
+  </body>
+</html>
