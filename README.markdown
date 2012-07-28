@@ -8,8 +8,11 @@ with:
 * html partials for creating elements which gets concatenated together.
 * custom key:value pairs to use arbitrary information in your posts.
 
-Notice that there is no "%title%" element at the top - so it gets excluded from 
-the index page.
+## Installation
+
+1. Fork this repo.
+2. Make sure you have pandoc installed.
+3. chmod +x make.sh
 
 ## How do I do stuff?
 
